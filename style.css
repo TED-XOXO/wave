@@ -1,0 +1,555 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    transition: 300ms;
+}
+.container{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 228, 196, 0.2);
+}
+.container .nav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.container .nav .logo .i{
+    display: none;
+}
+.container .nav .logo .h1{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Lora', serif;
+}
+.container .nav .ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.container .nav .ul a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Mukta', sans-serif;
+}
+.container .nav .login{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    font-family: 'Mukta', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+.container .nav .login .log{
+    text-decoration: none;
+    color: black;
+}
+.container .nav .login .sign{
+    padding: 5px 20px;
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+}
+.container .section1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    font-family: 'Mukta', sans-serif;
+}
+.container .section1 h1{
+    text-align: center;
+    padding: 0px 30%;
+    font-size: 70px;
+    font-weight: 600;
+    margin-top: 40px;
+    line-height: 90%;
+}
+.container .section1 .p1{
+    text-align: center;
+    padding: 30px 30%;
+    font-size: 18px;
+    line-height: 110%;
+}
+.container .section1 .input{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid white;
+    height: 45px;
+    border-radius: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.container .section1 .input input{
+    padding: 10px 0px;
+    padding-left: 20px;
+    width: 400px;
+    height: 100%;
+    border: none;
+    background-color: white;
+    font-size: 16px;
+}
+.container .section1 .input button{
+    text-decoration: none;
+    color: white;
+    background: black;
+    padding: 0px 25px;
+    border-radius: 10px;
+    border: none;
+    height: 100%;
+    cursor: pointer;
+    font-size: 16px;
+}
+.container .section1 .p2{
+    text-align: center;
+    padding: 80px 30%;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1300px){
+    .container .section1 h1{
+        padding: 0px 20%;
+        font-size: 70px;
+        font-weight: 600;
+    }
+    .container .section1 .p1{
+        padding: 30px 20%;
+        font-size: 18px;
+        line-height: 110%;
+    }
+}
+@media screen and (max-width: 1150px){
+    .container .section1 .p2{
+        text-align: center;
+        padding: 80px 20%;
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 1100px){
+    .container .nav .ul{
+        gap: 25px;
+    }
+    .container .nav .login{
+        gap: 16px;
+    }
+}
+@media screen and (max-width: 1050px){
+    .container .nav .ul{
+        gap: 22px;
+    }
+    .container .nav .login{
+        gap: 15px;
+    }
+    .container .section1 h1{
+        padding: 0px 20%;
+        font-size: 65px;
+        font-weight: 600;
+    }
+}
+@media screen and (max-width: 1000px){
+    .container .nav .ul{
+        gap: 20px;
+    }
+    .container .nav .login{
+        gap: 13px;
+    }
+    .container .section1 .p1{
+        padding: 30px 20%;
+        font-size: 17px;
+        line-height: 110%;
+    }
+}    
+@media screen and (max-width: 950px){
+    .container .nav .ul{
+        gap: 15px;
+    }
+    .container .nav .login{
+        gap: 10px;
+    }
+    .container .section1 .p1{
+        padding: 30px 20%;
+        font-size: 16px;
+        line-height: 110%;
+    }
+    .container .section1 .p2{
+        text-align: center;
+        padding: 80px 20%;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 900px){
+    .container .nav .ul a{
+        font-size: 15px;
+    }
+    .container .nav .ul{
+        gap: 13px;
+    }
+    .container .nav .login{
+        gap: 10px;
+        font-size: 15px;
+    }
+    .container .nav .login .sign{
+        padding: 5px 18px;
+        border-radius: 10px;
+    }
+}
+@media screen and (max-width: 850px){
+    .container .nav .logo h1{
+        font-size: 28px;
+        font-weight: 700;
+    }
+    .container .section1 h1{
+        padding: 0px 20%;
+        font-size: 60px;
+        font-weight: 600;
+    }
+    .container .section1 .input input{
+        font-size: 14px;
+    }
+    .container .section1 .input button{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 800px){
+    .container .nav .login .log{
+        display: none;
+    }
+    .container .nav{
+        padding: 10px 20px;
+    }
+    .container .section1 .input{
+        height: 40px;
+    }
+    .container .section1 .input input{
+        width: 350px;
+    }
+}
+@media screen and (max-width: 750px){
+    .container .nav .login .sign{
+        padding: 5px 16px;
+        border-radius: 10px;
+    }
+    .container .nav .logo h1{
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .container .section1 .input input{
+        width: 300px;
+    }
+    .container .section1 h1{
+        padding: 0px 20%;
+        font-size: 55px;
+        font-weight: 600;
+    }
+    .container .section1 .p1{
+        padding: 30px 20%;
+        font-size: 15px;
+    }
+    .container .section1 .p2{
+        font-size: 13px;
+    }
+    .container .section1 .input button{
+        padding: 0px 15px;
+    }
+}
+@media screen and (max-width: 700px){
+    .container .nav .login{
+        font-size: 14px;
+    }
+    .container .nav .ul a{
+        font-size: 14px;
+    }
+        .container .section1 .p1{
+        padding: 30px 15%;
+        font-size: 15px;
+    }
+    .container .section1 h1{
+        padding: 0px 15%;
+        font-size: 55px;
+        font-weight: 600;
+    }
+}
+@media screen and (max-width: 650px){
+    .container .nav{
+        padding: 8px 15px;
+    }
+    .container .section1 h1{
+        padding: 0px 15%;
+        font-size: 50px;
+        font-weight: 600;
+    }
+    .container .section1 .p1{
+        padding: 30px 15%;
+        font-size: 14px;
+    }
+    .container .section1 .input input{
+        width: 250px;
+        padding-left: 15px;
+        font-size: 12px;
+    }
+    .container .section1 .input button{
+        font-size: 12px;
+    }
+    .container .section1 .input{
+        height: 35px;
+    }
+        .container .section1 .p2{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 600px){
+    .container .nav .ul{
+        gap: 10px;
+    }
+    .container .nav .login .sign{
+        padding: 3px 14px;
+        border-radius: 10px;
+    }
+    .container .nav .logo h1{
+        font-size: 23px;
+        font-weight: 700;
+    }
+    .container .section1 .p2{
+        font-size: 11px;
+    }
+    .container .section1 .input button{
+        padding: 0px 12px;
+    }
+    .container .section1 .p2{
+        padding: 60px 20%;
+    }
+}
+@media screen and (max-width: 550px){
+    .container .nav .ul{
+        gap: 8px;
+    }
+    .container .nav .ul a{
+        font-size: 13px;
+    }
+    .container .nav .login{
+        font-size: 13px;
+    }
+    .container .nav .login .sign{
+        padding: 3px 12px;
+        border-radius: 8px;
+    }
+    .container .nav .logo h1{
+        font-size: 22px;
+        font-weight: 700;
+    }
+    .container .section1 h1{
+        padding: 0px 12%;
+        font-size: 45px;
+        font-weight: 600;
+        margin-top: 30px;
+    }
+    .container .section1 .p1{
+        padding: 20px 12%;
+    }
+    .container .section1 .p2{
+        padding: 40px 15%;
+    }
+}
+@media screen and (max-width: 500px){
+    .container .nav{
+        padding: 6px 12px;
+    }
+    .container .nav .ul a{
+        font-size: 12px;
+    }
+    .container .nav .login{
+        font-size: 12px;
+    }
+    .container .nav .logo h1{
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .container .section1 h1{
+        padding: 0px 12%;
+        font-size: 40px;
+        font-weight: 600;
+        margin-top: 25px;
+    }
+    .container .section1 .p1{
+        padding: 15px 12%;
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 450px){
+    .container .nav{
+        padding: 5px 10px;
+    }
+    .container .nav .login .sign{
+        padding: 3px 10px;
+        border-radius: 8px;
+    }
+    .container .nav .ul{
+        gap: 6px;
+    }
+    .container .section1 .p1{
+        padding: 15px 8%;
+        font-size: 12px;
+        font-weight: 200;
+    }
+    .container .section1 .p2{
+        padding: 40px 15%;
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 440px){
+    .container .nav .ul{
+        display: none;
+    }
+    .container .nav .logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5px;
+    }
+    .container .nav .logo .i{
+        display: flex;
+        font-size: 28px;
+    }
+    .container .nav .logo h1{
+        font-size: 28px;
+        font-weight: 800;
+    }
+    .container .nav .login .sign{
+        padding: 3px 12px;
+        border-radius: 8px;
+    }
+}
+@media screen and (max-width: 400px){
+    .container .nav .logo .i{
+        display: flex;
+        font-size: 26px;
+    }
+    .container .nav .logo h1{
+        font-size: 26px;
+        font-weight: 800;
+    }
+    .container .section1 .input button{
+        padding: 0px 10px;
+    }
+    .container .section1 .input button{
+        font-size: 10px;
+    }
+    .container .section1 .input{
+        height: 30px;
+    }
+    .container .section1 h1{
+        padding: 0px 10%;
+        font-size: 35px;
+        font-weight: 600;
+        margin-top: 20px;
+    }
+    .container .section1 .input input{
+        width: 200px;
+        padding-left: 12px;
+        font-size: 10px;
+    }
+    .container .section1 .p1{
+        padding: 15px 5%;
+        font-size: 12px;
+        font-weight: 200;
+    }
+    .container .section1 .p2{
+        padding: 40px 5%;
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 350px){
+    .container .section1 .p1{
+        padding: 15px 2%;
+        font-size: 10px;
+        font-weight: 100;
+    }
+    .container .section1 h1{
+        padding: 0px 5%;
+        font-size: 30px;
+        font-weight: 600;
+        margin-top: 20px;
+    }
+    .container .section1 .p2{
+        padding: 35px 5%;
+        font-size: 8px;
+    }
+    .container .section1 .input button{
+        padding: 0px 8px;
+    }
+    .container .section1 .input button{
+        font-size: 10px;
+    }
+    .container .section1 .input{
+        height: 25px;
+    }
+}
+@media screen and (max-width: 300px){
+    .container .nav .logo .i{
+        display: flex;
+        font-size: 24px;
+    }
+    .container .nav .logo h1{
+        font-size: 24px;
+        font-weight: 800;
+    }
+    .container .nav .login .sign{
+        padding: 3px 10px;
+        border-radius: 8px;
+    }
+    .container .section1 .input button{
+        font-size: 8px;
+    }
+    .container .section1 .input input{
+        font-size: 8px;
+    }
+    .container .section1 .input input{
+        width: 150px;
+    }    
+}
+@media screen and (max-width: 250px){
+    .container .nav .logo .i{
+        display: flex;
+        font-size: 22px;
+    }
+    .container .nav .logo h1{
+        font-size: 22px;
+        font-weight: 800;
+    }
+    .container .nav .login .sign{
+        padding: 2px 8px;
+        border-radius: 8px;
+    }
+    .container .section1 h1{
+        padding: 0px 5%;
+        font-size: 25px;
+        font-weight: 600;
+        margin-top: 15px;
+    }
+}
+
